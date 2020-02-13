@@ -1,0 +1,14 @@
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+
+
+
+In 2015, the Nobel Prize in Physics has been awarded to T. Kajita and A. B. McDonald, for "the discovery of neutrino oscillations, which shows that neutrinos have mass". For forty years, a discrepancy had been observed between the expected flux of neutrinos from the Sun and the flux measured. The model of neutrino oscillation imagined by B. Pontecorvo in 1957 was one of the many models trying to explain this discrepancy at the time. This model predicts that neutrinos can change their nature, in fact their flavour, as they travel over large distances. This phenomenon though has one important implication: for them to oscillate, neutrinos must have a mass, different for each of the three states, something that goes against the prediction of the Standard Model, which says their mass should be zero. This question remains, as of today, unanswered.
+
+Most of the parameters involved in the neutrino oscillations have been measured in the last decades. One of the remaining unknowns is the question of the Neutrino Mass Hierarchy. Only two absolute mass differences have been measured between out of the three states. Which of the two possible solutions, the Normal Hierarchy or the Inverted Hierarchy, is the right one is still an open question. Answering the question of the Neutrino Mass Hierarchy is one of the main missions of the KM3NeT collaboration, in charge of ORCA. Built on the sea-floor of the Mediterranean Sea, ORCA is a Cherenkov neutrino telescope, that records in his kilometric volume the light emitted by charged secondary particles created during the interaction of a neutrino with the surrounding water. 
+
+One of the critical steps in the Neutrino Mass Hierarchy measurement is the identification of the flavour of the detected neutrinos. If the current tools used to discriminate between the different flavours -- a machine learning algorithm called Random Decision Forest -- performs well at the high-end of the energy range seen by ORCA, the performance achieved at the lower edge (1--10 GeV) is relatively poor. Besides, this algorithm uses brute force to classify the events by using all of the near two hundred variables reconstructed from the raw data of the detector. The goal of this study is to improve the particle identification at these energies by using a different kind of machine learning algorithm -- a Neural Network -- and to reduce the number of variables necessary to the classification.
+
+We will first introduce the background and tools necessary to the understanding of the study. Then we will present the performance of the Neural Network and compare it to the current Random Decision Forest.
+

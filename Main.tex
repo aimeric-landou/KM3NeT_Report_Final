@@ -1,0 +1,131 @@
+\documentclass[11pt]{report}
+\usepackage[a4paper, bmargin=2.7cm, tmargin=2cm, lmargin=2cm, rmargin=2cm]{geometry}
+\setcounter{tocdepth}{1}
+
+% Spacing stuff
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.5em}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{enumitem}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{natbib}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage{afterpage}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{verbatim} 
+%AIMERIC ADDITIONS
+\usepackage{rotating}
+
+
+% Commands
+\newcommand{\df}{\equiv}
+\newcommand{\setas}{\overset{!}{=}}
+\newcommand{\refeq}[1]{(\ref{#1})}
+\newcommand{\com}[1]{\textbf{\color{red}[#1]}}
+\newcommand{\with}{\quad\text{with}\quad}
+\newcommand{\munu}{{\mu\nu}}
+\newcommand{\smallsum}{\,\raisebox{-3pt}{\text{\LARGE $\Sigma$}}\hspace{1pt}}
+\newcommand{\Msol}{M_\odot}
+\newcommand{\zsp}{z_\mathrm{spec}}
+\newcommand{\zph}{z_\mathrm{phot}}
+\renewcommand{\AA}{\r{A}\,}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+% Sections renewal
+\newcommand{\theromanchapter}{\Roman{chapter}}
+\titleformat{\chapter}{\huge\bfseries}{\theromanchapter\;--}{6pt}{}
+\titlespacing{\chapter}{0pt}{20pt}{15pt}
+\titlespacing{\section}{10pt}{10pt}{10pt}
+\titlespacing{\subsection}{20pt}{10pt}{10pt}
+
+
+
+
+\begin{document}
+
+% Title Page
+\thispagestyle{empty}
+\begin{center}
+    \centering
+  % logos
+    \includegraphics[height=45pt]{fig/logo_cnrs.jpg}\hspace{30pt}
+    \includegraphics[height=65pt]{fig/Logo_Phelma.png}\hspace{30pt}
+    \includegraphics[height=65pt]{fig/logo_uga_vo_cmjn.jpg}\hspace{30pt}
+    \includegraphics[height=55pt]{fig/logo_cppm.png}\par
+    \vspace{1cm}
+  % Head
+    {\large Université Grenoble Alpes -- Second year Masters degree \\ [3pt] \textsc{Physique subatomique et cosmologie}\par}
+    {\large Grenoble INP Phelma \\ [3pt] \textsc{Physique, Nanosciences}\par}
+    \vspace{8pt}
+    {\ - \par}
+    \vspace{8pt}
+    {\large Centre de Physique des Particules de Marseille\par}
+    \vspace{12pt}
+  % Title
+    \rule{\linewidth}{1pt}\par
+    \vspace{2pt}
+    \LARGE{\textsc{Neutrino Mass Hierarchy Measurement \\[2pt] Particle Identification using Neural Networks}}
+    \rule{\linewidth}{1pt}\par
+    \vspace{10pt}
+  % Names
+    {\Large Aimeric \textsc{Landou}\par}
+    \vspace{12pt}
+    {\Large \textsc{Supervisor:} \\[4pt] \large Dr. Paschal \textsc{Coyle}  (CPPM)\\coyle@cppm.in2p3.fr \par}
+    \vspace{8pt}
+    {\Large \textsc{Phelma Tutor:} \\[4pt] \large M. Lionel \textsc{Bastard} \\bastard@minatec.grenoble-inp.fr\par}
+    \vspace{8pt}
+    {\Large \textsc{UGA Tutor:} \\[4pt] \large Dr. Aurélien \textsc{Barrau}\\barrau@lpsc.in2p3.fr\par}
+    \vspace{18pt}
+\end{center}
+  % Date
+\begin{center}
+\vspace{20pt}
+    {\large from 05/03/2018 to 28/07/2018}
+\end{center}
+
+
+
+\tableofcontents
+
+\input{chapters/Glossary.tex}
+
+\listoffigures
+
+\input{chapters/intro.tex}
+
+\chapter{Theoretical Context}\label{Theoretical_Context}
+\input{chapters/Theoritical_tools.tex}
+\chapter{Classification Study} \label{Classification_Study}
+\input{chapters/My_work.tex}
+
+\bibliography{main}
+\addcontentsline{toc}{chapter}{Bibliography}
+\nocite{*}
+\bibliographystyle{apa} 
+
+
+\input{chapters/Abstract.tex}
+\thispagestyle{empty}
+
+
+\end{document}

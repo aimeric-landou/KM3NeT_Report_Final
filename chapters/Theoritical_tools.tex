@@ -1,0 +1,185 @@
+\section{Neutrinos}
+
+Around $10^{15}$ of these elusive and mysterious particles traverse our body every second citep{Bahcall:2004pz}
+%https://arxiv.org/pdf/astro-ph/0412440.pdf ; Bahcall, John N.; Serenelli, Aldo M.; Basu, Sarbani (2005). "New Solar Opacities, Abundances, Helioseismology, and Neutrino Fluxes". The Astrophysical Journal. 621 (1): L85–8. arXiv:astro-ph/0412440 Freely accessible
+, and yet we discovered these ghosts only relatively recently. Different experiments finally allowed us to see them, or rather see their interaction with other particles, and to start measuring their various characteristics and properties. 1956 saw the first proof of their existence \citep{Cowan:1992xc}, 22 years after Pauli had first written his idea of the neutrino in a paper \citep{Brown:1978pb}. A different type of neutrino is discovered 6 years later \citep{Danby:1962nd} in 1962: with the last kind discovered in 2000 \citep{Kodama:2000mp}, the three classes of neutrinos, or flavours, will  be named electron, muon and tau neutrino. While their oscillation is already being theorised in the 60's, due to the Solar neutrino problem -- a missing number of neutrinos detected in a previous experiment -- these oscillations have only been observed in 2001, with the Sudbury Neutrino Observatory \citep{Ahmad:2002jz}. Although they were first thought massless, these oscillations brought the proof of a non-zero mass. A lot of questions remain today. In particular, we only have measured two absolute squared-mass differences among the three kinds of neutrinos, and thus don't know the full mass ordering. This is the Neutrino Mass Hierarchy problem.
+
+\subsection{What is a neutrino?}
+Neutrinos are almost massless elementary particles with half-integer spin - they are thus fermions -- and no electric or colour charge. Because of that, they can only interact through the Weak Interaction -- from this come their elusive nature.
+
+There are three flavour of neutrinos known so far: electron neutrino ($\nu_{e}$), muon neutrino ($\nu_{\mu}$) and tau neutrino ($\nu_{\tau}$), each one associated to his lepton counterpart, electron, muon and tau. These flavours are called interaction eigenstates: they are the quantum states that we can detect, and in which neutrinos are created or projected onto during a flavour interaction (through charged current, CC, with the exchange of a $W^+$ or $W^-$ boson, or neutral current, NC, through the exchange of a Z boson). However, they are not the eigenstates of the Hamiltonian (or mass eigenstates). Thus, during the propagation of the particle, the different components projected onto the mass eigenstates basis evolve on their own, and the mixing happens. The mass eigenstates of the neutrino are called ($\nu_{1}$), ($\nu_{2}$) and ($\nu_{3}$). Eq. \refeq{LJFESUIH} describes the decomposition of a neutrino created in an interaction eigenstate onto the three mass eigenstates, and Eq. \refeq{ESFNIMNFU} describes the mixing that occurs during the propagation of this same neutrino.
+
+\begin{equation}
+    {\ket{\nu (t=0)}= \ket{\nu_\alpha} = \sum_{k=1}^{3}{U_{\alpha k} ^{*} \ket{\nu_k}}} 
+    \label{LJFESUIH}   
+\end{equation}
+where $\nu_\alpha = \nu_e, \nu_\mu$ or $\nu_\tau$ and $U_{\alpha k} ^{*}$ is a coefficient of the conjugate of the unitary neutrino mixing matrix, often called PMNS matrix \citep{Patrignani:2016xqp}.
+
+\begin{equation}
+    {\ket{\nu (t)} = \sum_{k=1}^{3}{U_{\alpha k} ^{*} exp(-i(E_k t - \mathbf{p_k} \cdot \mathbf{x})) \ket{\nu_k}}}
+    \label{ESFNIMNFU}
+\end{equation}
+where $E_k$ is the energy of the neutrino, $\mathbf{p_k}$ its momentum and $\mathbf{x}$ its position. 
+
+\subsection{Neutrino Mass Hierarchy}
+
+One can show that the oscillation probability between two flavours in the vacuum is directly proportional to the squared sine of the absolute mass squared differences \citep{Zuber:2004nz}. In a two-flavour case, this can be written as in Eq. \refeq{AOZIEJ}:
+
+\begin{equation}
+    {P_{\alpha \beta}} \propto \sin ^2 \left(\frac{{\Delta m}_{21} ^2*L}{4E_\nu}\right)
+    \label{AOZIEJ}
+\end{equation}
+where:
+$|{\Delta m}_{21} ^2|=|{m_2 ^2-m_1 ^2}|$ and ${P_{\alpha \beta}}$ is the probability for a neutrino of flavour $\alpha$ to oscillate into the flavour $\beta$.
+
+Two absolute mass-squared differences have been measured so far, one thanks to the neutrinos from the sun, and the other thanks to atmospheric neutrino \citep{Patrignani:2016xqp}. 
+
+We only know 2 absolute squared-mass differences because the functions involved in theses oscillation probabilities are even (see Eq. \refeq{AOZIEJ}). Previous studies have reduced the number of possible orderings to two: the normal hierarchy (NH) and the inverted hierarchy (IH), only set apart by one sign in the mass differences. This is schematised in Fig. \ref{fig:POAZFN}. The convention is to name $\nu_1$ and $\nu_2$ the two mass eigenstates measured by the sun experiment, with $\nu_1$ being the lighter state, and $\nu_3$ the last state, which squared-mass difference with $\nu_2$ has been measured by looking at atmospheric neutrinos.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.60\textwidth]{fig/Neutrino_mass_hierarchy_LoI.jpg}
+    \caption{Schematic illustration of the two distinct neutrino mass hierarchies. The colour code indicates the flavour composition ($\nu_e$, $\nu_\mu$, $\nu_\tau$) in each mass eigenstates ($\nu_1$, $\nu_2$, $\nu_3$). From \citep{Hofestaedt2017}}
+    \label{fig:POAZFN}
+\end{figure}
+
+To decide on the right solution, ORCA makes use of the effective potential encountered by the neutrinos coming from the other side of the Earth during their propagation through its mantle and core. This effective potential mainly impacts electron neutrino events as it originates from the interaction of electron neutrinos with the electrons in matter, and breaks the evenness of the oscillation probability, allowing us to get a signed squared-mass difference.
+
+For the measurement the detected neutrinos are characterised by flavour, energy and direction (length traveled through the Earth) and the obtained distributions are compared with the expectations from the two different hypotheses: NH, IH. These expectations are represented in Fig. \ref{fig:AIOJZOJ} for the muon flavour, in the Energy-Azimuth Angle plane, and by using true quantities, i.e with a infinite resolution and no error on the energy and azimuth angle. The asymmetry is larger in the bottom left part of both plots. The asymmetry can be defined as a function A with the formula $A=\frac{N_{NH}-N_{IH}}{N_{NH}}$, where $N_{NH}$ and $N_{IH}$ are the number of expected events for the normal hierarchy and the inverted hierarchy , and can be plotted to get a better idea of the amplitude of the change. This is done in Fig. \ref{fig:JUHDNB} after applying a smearing to simulate the finite precision of the detector. To the left the plot is done for electron neutrinos and antineutrinos, and to the right for muon neutrinos and antineutrinos. Again, the largest asymmetry value can be found at low energy, between 1 and 10 GeV. This is where the study will focus on for the classification comparison.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.90\textwidth]{fig/numu_IH_vs_NH.jpg}
+    \caption{
+    $\nu_\mu + \nu_\mu$ event rate (units of $GeV^{-1}y^{-1}s^{-1}$ in log scale) as a function of the neutrino energy and cosine of the zenith angle, for a 1 Mton target volume. The left (right) plot shows the distribution for the normal (inverted) mass hierarchy. From \citep{Adrian-Martinez:2016fdl}}
+    \label{fig:AIOJZOJ}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.90\textwidth]{fig/numu_vs_nue_Asymmetry.jpg}
+    \caption{Asymmetry between the number of $\nu +\bar{\nu }$ CC interactions expected in case of NH and IH, expressed as a function of the energy and the cosine of the zenith angle. The right (left) plot applies to muon (electron) neutrinos. A smearing is applied on the energy and on the azimuth angle to simulate the resolution of the detector. From \citep{Adrian-Martinez:2016fdl}}
+    \label{fig:JUHDNB}
+\end{figure}
+
+\subsection{KM3NeT/ORCA}
+
+KM3NeT/ORCA is one of the two neutrino detectors being built inside the KM3NeT collaboration (its counterpart, being built in Italy, is named ARCA). ORCA is a kilo-metric lattice of Digital Optical Modules (DOMs) being installed at the bottom of the Mediterranean Sea, that will eventually be arranged in 115 strings (or lines) of 18 DOMs each, spaced by 9 meters \citep{Adrian-Martinez:2016fdl}. In each DOM, 31 photomultipliers (PMTs) looking covering roughly every directions recover the Cherenkov light emitted in a cone along its path by the charged secondary particles produced in a neutrino interaction, as they propagate through the water\footnote{The Cherenkov phenomenon appears when a charged particle propagates in a medium above the phase velocity of light in this medium. It manifests as a cone of light being emitted along the path of the particle.}. The disposition of the DOMs has been designed to allow the detection of neutrinos in the few-GeV energy range (compared to TeV energy scale for ARCA in Italy) \citep{Adrian-Martinez:2016fdl}.
+
+At high energy, the two main kinds of events (also the ones studied in this report) are easily recognisable. A muon produced by CC muon-neutrino interaction propagating through the detector appears once reconstructed as a straight line, while NC events and CC tau and electron-neutrino events emit a shower of secondary particles that tend to appear as point like in the detector in the low-energy range of 1--10 GeV, the spatial dimensions being too small compared to the spacing of the DOMs \citep{Adrian-Martinez:2016fdl}. Fig. \ref{fig:POJRIDG} shows the two typical patterns. The shower-like events on the right seems to have been induced by a high energy neutrino as the shower pattern can clearly be seen.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.90\textwidth]{fig/Shower_vs_Track.jpg}
+    \caption{Event displays for a simulated ${\nu }_{\mu }$ CC event (left) and a contained ${\nu }_{\mu }$ NC event (right). The incoming neutrinos are indicated by the red line, and the outgoing lepton by the green line. The colour scale gives the hit times with respect to the time of the neutrino interaction. DOMs without hits are shown by grey dots. From \citep{Adrian-Martinez:2016fdl}}
+    \label{fig:POJRIDG}
+\end{figure}
+
+Finally, such a detector built close to the sea level would be unable to detect any neutrino. Or rather, we would be unable to distinguish the rare events from the bulk that would be produced by the constant bombardment by atmospheric muons, created in the atmosphere by the collision of cosmic rays with particles of the atmosphere. Even at around 2450 meters below the surface though, the rate of atmospheric muons of the right energy range reaching the detector is about $10^5$ orders of magnitude higher than the rate of neutrinos in the GeV energy-scale citep{Hofestaedt201}. A way of greatly reducing this difference is looking at up-going neutrinos having been created on the other side of Earth, as muons cannot traverse the Earth.
+
+\section{Particle Identification: PID}
+
+The track and shower patterns are easily recognisable, most of the time. However, at low energy (1 to 10 GeV, where we are most sensitive to the NMH) a track is often too small compared to the resolution of the detector and thus is reconstructed as point-like, a signature characteristic of showers. Unfortunately, no magic variable built from the data recorded for one event has yet been found on which a cut would result on a good discrimination power at these energies.
+
+The measurement of the Neutrino Mass Hierarchy as presented previously asks for a way of discriminating electron neutrinos from muon neutrinos. Unfortunately, no magic variable built from the data recorded for one event has yet been found on which a cut would result on a good discrimination power. That is where machine learning can play a role. By being trained on a large set of data, a machine learning algorithm can discern patterns in a multi-dimensional space. One of machine learning’s many applications is non-linear classification of large volumes of data. That is, recognise whether one data point belongs to one predefined class or another. The main difference between a linear classifier and a non-linear one is summarised in Fig. \ref{fig:NUIO} in a 2-dimensional case: a non-linear classifier can simply divide a plane using contours different from a line. These two examples, although quite simple with only two variables, give a visual idea of what a machine learning algorithm does. Only, they can work on multiple-dimensional data.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/Classification_2D_comparison.png}
+    \caption{Schematic representation of the classification in 2 dimensions for a linear classifier on the left and a non-linear classifier on the right.}
+    \label{fig:NUIO}
+\end{figure}
+
+With around 200 variables reconstructed from the raw data for one single event for KM3NeT, the number of dimensions is far too large for a human to be able to find patterns. A kind of machine learning algorithm called Random Decision Forest has been used until now to navigate through this data, working on all the variables available.
+
+\subsection{Random Decision Forest}
+
+Lots of different machine learning algorithms exist. The one used for this PID at the moment is a Random Decision Forest algorithm (RDF). A Random Decision Forest is composed of many trees (the algorithm used in the PID has 101 of them), each trained independently and making his own assumption. Then user can then decide on the number of trees he wants to agree with each other to make a decision -- here we simply decide based on the majority.
+
+A tree is built recursively. Once he’s given a set of data divided into two classes (0 and 1), he will find the variable that gives the best separation between the two classes, make a cut, and save the value and the name of the variable in a first node. For each side of the cut, the algorithm will do the exact same thing, and continue to do so at each new node until a stop condition is met. While asking the algorithm to stop when the samples at the output of a node are composed of only one class would give the best results for the training dataset, this kind of condition would lead to an obvious overtraining, where the tool has learned details of the noise in the training data and will behave poorly when given new data: this is the Bias-Variance trade-off \citep{hastie_09_elements-of.statistical-learning}. Thus, more elaborate stop conditions are usually used, to counter this effect.
+
+The reason for this work was to reduce the number of variables used, and try to improve the classification for low energy neutrino events: too many variables might indeed be messing with the current training. Another machine learning algorithm has been chosen for that: a neural network.
+    
+\subsection{Neural Network}
+
+\subsubsection{What is a Neural Network?}
+
+\qquad A neural network, or NN, is a non-linear mathematical function, transforming an input into its image, represented by a collection of nodes, or neurons, ordered in layers, and linked together \citep{MacKay2003}. A very simple network is presented in Fig. \ref{fig:XXX}. An event injected in the first layer, or input layer, in the form of an array of numbers see its information propagate through the network and undergo transformations until it reaches the last layer, or output layer. The layers between the first and the last ones are called hidden layers.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\textwidth]{fig/NN_shape_et_layout.png}
+    \caption{Representation of a neural network with 3 input neurons, 1 hidden layer and 1 output neuron.}
+    \label{fig:XXX}
+\end{figure}
+
+For each input event $X_a$ = ($x_1$, $x_2$, …, $x_n$), and for a set of weights w, we have an image $y_{out}$($X_a$), which in our case is a real number and the verdict of our neural network on the classification of this event. We can see the transformation of this event as the network processing a signal. Let’s look at how this signal propagates from one layer to the next. The neurons of the first layers each receive one the n variables describing the event $X_a$ and directly transmit it without transformation. The transformations take place on the other layers. Each neuron of one of these layers, hidden layers and output layer, receive as an input the output of all the neurons of the previous layer multiplied by the weight of the corresponding connexion. These inputs then undergo a transformation that can be divided into two functions. First, a synapse function – in our case a simple sum – projects this multidimensional input onto one one-dimensional variable, that then goes through the neuron activation function, a non-linear function – in our case the hyperbolic tangent function. The non-linearity of this function is necessary to get a good classification of complex non-linear structures. This structure is summarised in Figure \ref{fig:ZERAZE}, and Eq. \refeq{AQSD} shows the output of the first neuron of the (i+1)-th layer as a function of the outputs of the neurons of the i-th layer.
+
+\begin{figure}[h!]
+    \centering    \includegraphics[width=0.65\textwidth]{fig/NN_activation_et_synapse.png}
+    \caption{
+    Schematic representation of the interface between two layers. $x_i ^j$ is the output of the j-th neuron of the i-th layer.}
+    \label{fig:ZERAZE}
+\end{figure}
+
+\begin{equation}
+    {x_1}^{i+1} = \tanh \left(\sum_{k=1}^{n}{x_k ^{i}w_{k,1}^{i}} \right) \dot{}
+    \label{AQSD}
+\end{equation}
+
+ In each layer a Bias node is present. Its output is independent of the outputs of the previous layer, often set to 1, and its impact, dictated by the weights of its connexions, is only modified during the training. Such a neuron introduces an affine shift in the inputs of the following layer it is connected to, and contributes to the non-linearity of the model.
+
+\subsubsection{Back Propagation}
+
+\qquad The training consists in finding the right weights for the task considered. To train the network, we feed it events from a set of data similar to the one we want it to later be able to classify automatically – the training dataset being either real data or, in our case, simulated data, for which we’re able to distinguish both categories. The network’s answer $y_{out}$($X_a$) of each event $X_a$ is compared to the image of this event by the expected value function $\hat{y_a}$$\in$[0,1]. This function $\hat{y_a}$ maps a class\_0 event onto 0, and a class\_1 event onto 1. Note that this is a choice well suited to our problem, featuring only two classes, but we could have chosen a different set of values and it wouldn’t have had any impact. This comparison is done through the introduction of an error function e (Eq. \refeq{YYaYeYwY}) measuring the quadratic deviation of the network’s output to this expected value.
+
+\begin{equation}
+    e(X_a|w) = \left(y_{out}(X_a)-\hat{y_a}\right)^2
+    \label{Tmunu}
+\end{equation}
+where:
+\begin{equation}
+    \hat{y_a} = \left\{
+    	\begin{array}{ll}
+			1 (class\_0) \\
+            0 (class\_1)
+    	\end{array}
+   	\right.
+    \label{YYaYeYwY}
+\end{equation}
+
+This error function holds for one set of weights, and will thus evolve during the training as the weights are re-computed. 
+
+The deviations of all the N training events are summarised in a global error function E, characterising the answer of the network to the whole training set rather than to one single event. This global error function is defined in Eq. \refeq{wHyeuUUUUU}, and is simply the square of the Euclidian norm:
+
+\begin{equation}
+    E(X_1, X_2, ..., X_N|w) = \sum_{a=1}^{N}{e(X_a|w)} = \sum_{a=1}^{N}{\left(y_{out}(X_a)-\hat{y_a}\right)^2}
+    \label{wHyeuUUUUU}
+\end{equation}
+
+To understand why we’re introducing a measurement of distance it is important to see that what we are trying to do is to build a mathematic function of a n-dimensional space (the n input variables) to a 1-dimensional space (the output of the neural network) as a generalisation of $\hat{y_a}$, which is only defined within the dataset used for the training and doesn’t look at these n variables. Ideally, this new function $y_{out}$ perfectly matches $\hat{y_a}$ on the subset of this new n-dimensional space that is the training dataset, and generalises well what it learned through the training. Unfortunately, outside of trivial classifications, these two things are often incompatible. A close to perfect match is often a hint of overtraining.
+
+Now this global error function has been defined, the problem becomes a simple optimisation problem. We now look at E as a function of the weights $w_{k,j} ^i$, with a fixed dataset of N events, and try to get the best minimum we can find in a reasonable amount of time (assuming a minimum does exist). A common method of minimisation, and the one used by our algorithm, although not the most efficient, is the method of gradient descent. Starting from a random set of weights $w_{k,j} ^i$, the algorithm follows the direction where the opposite of the gradient of E is maximum, i.e. where E decreases most rapidly, and moves by small steps of length proportional to the gradient, the constant of proportionality being a positive number called learning rate and set by the user. The algorithm continues until the classification performance stops evolving. The training is completed.
+
+Once a minimum has been found, the weights are saved in a file, so that the neural network can be fed new data in the future for classification.
+
+\subsubsection{Training and testing sample}
+
+\qquad To be able to test the trained neural network, in particular to check for overtraining, the initial data is divided into two parts. The first is the actual training sample, which will be used as described previously. What is left, called testing sample, will be classified by the neural network once the latter has been trained on the training sample. These two samples being ideally built randomly from the initial dataset, if this dataset gather a large enough number of events, they should share the same features, and the results of the classification of both samples should not be much different from one another in the absence of overtraining.
+
+\subsubsection{Output of a neural network. Classifier distribution}
+\qquad The network has been trained. How can we interpret the result of the classification of an event $X_a$ ? The only neuron of the output layer gives its answer in the form of a real number $y_{out}$$\in$[-1;1], as the image of the last hidden layer by the hyperbolic tangent function. A last transformation can be done, essentially in order to facilitate the interpretation: an affine transformation to have the final output in the range [0,1]. This output can be seen as a score characterising how close to either class the event is. The closer to 1 (0) the score, the closer the event is to class\_1 (class\_0). One now has to make a choice on how to use this result. New classes can be created based on the classifier output, by applying one or more cuts. If high purity classifications are needed, one can choose to keep only events with a classifier output close to the extrema 0 or 1, effectively applying two cuts and thus creating three classes: classified\_as\_0, classified\_as\_1 and a new unclear\_class corresponding to the middle of the classifier distribution. The purity in the meaningful classes will be high, but that will come at the expense of the amount of events effectively classified, as a lot of them with classifier outputs in the middle are discarded. On the other hand, if the amount of events is valuable, one can loosen the selection and apply only one cut in the middle of the distribution, though the purity of the two new classes will be lowered.
+
+A qualitative evaluation of a neural network used as a classifier can be done by looking at a histogram such as the example presented in Fig. \ref{fig:ALELUIA}. For each of the two classes (class\_0 in red and class\_1 in blue), its events are given to the neural network and the outputs are collected and distributed among the bins. The two histograms are then normalised. As one could hope, class\_0 is concentrated towards 0, and class\_1 towards the value 1. Still, a non negligible amount of events have an output value in the center: the neural network hasn't been able to extract enough characteristic features. As a side note: this histogram has been plotted here for both the test sample and the training sample: in this example, one can see that both match, which is a sign that there is no overtraining here \citep{hastie_09_elements-of.statistical-learning}.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.55\textwidth]{fig/NN_classifier.pdf}
+    \caption{Distributions of the classifier output for each class (class\_0 in red and class\_1 in blue), and each sample (dots for the training sample, full rectangles for the test sample). Each distribution is normalised to the total number of events considered.}
+    \label{fig:ALELUIA}
+\end{figure}
+
+The structure of the neural network presented here is specific to the package used in this study: Toolkit for Multivariate Analysis, or TMVA \citet{2007physics...3039H}. Although the principle is the same every neural network, the specifics, such as the synapse function, the activation function or the minimisation method, can change.
+
+This chapter introduced the different parts necessary to the understanding of the study. The next section will present the study itself.
